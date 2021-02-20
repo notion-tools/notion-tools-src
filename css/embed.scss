@@ -1,0 +1,86 @@
+h1 {
+    display: none;
+}
+
+.notion-collection_view-block>div:first-child>div:first-child>div:first-child>div:first-child>div:first-child {
+    font-weight: 700 !important;
+    font-size: 30px !important;
+}
+
+.notion-collection_view-block>div:first-child>div:nth-child(2)>div>div {
+    // background: #000;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+.notion-collection_view-block {
+    padding-bottom: 30px;
+    border-top: none;
+}
+
+// 카드
+.notion-collection-item {
+    
+    
+    transition: 200ms;
+    
+    &>a>div:hover {
+    background: #ffffff !important;
+    }
+    
+    &>a {
+        border-radius: 6px !important;
+    }
+    
+    
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 3px 6px #00000018;
+        background: #ffffff !important;
+    }
+    
+    // 제목
+    &>a>div>div:nth-child(2) {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-top: 5px;
+        padding-bottom: 0px !important;
+        
+        &>div {
+            font-size: 23px !important;
+            font-weight: 700 !important;
+        }
+        
+        .notion-record-icon {
+            display: none !important;
+        }
+    }
+    
+    // 설명
+    &>a>div>div:nth-child(3) {
+        padding-left: 15px !important;
+
+        
+        // 소개
+        &>div:nth-child(1) {
+            color: #649DFF;
+            font-size: 15px !important;
+            margin-bottom: 10px;
+        }
+        
+        // 설명
+        &>div:nth-child(2) {
+            margin-bottom: 10px;
+            height: auto !important;
+            
+            span {
+                font-size: 14px;
+                color: #808080;
+                white-space: normal;
+                word-break: break-all;
+                line-height: 170%;
+            }
+        }
+    
+    }
+}
