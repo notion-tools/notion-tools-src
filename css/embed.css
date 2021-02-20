@@ -8,14 +8,14 @@ h1 {
 }
 
 .notion-collection_view-block > div:first-child > div:nth-child(2) > div > div {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 200px;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  width: 200px !important;
 }
 
 .notion-collection_view-block {
-  padding-bottom: 30px;
-  border-top: none;
+  padding-bottom: 30px !important;
+  border-top: none !important;
 }
 
 .notion-collection-item {
@@ -32,10 +32,10 @@ h1 {
 }
 
 .notion-collection-item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 0px 3px 6px #00000018;
-          box-shadow: 0px 3px 6px #00000018;
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
+  -webkit-box-shadow: 0px 3px 6px #00000018 !important;
+          box-shadow: 0px 3px 6px #00000018 !important;
   background: #ffffff !important;
 }
 
@@ -62,7 +62,7 @@ h1 {
 .notion-collection-item > a > div > div:nth-child(3) > div:nth-child(1) {
   color: #649DFF;
   font-size: 15px !important;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 
 .notion-collection-item > a > div > div:nth-child(3) > div:nth-child(2) {
@@ -71,10 +71,10 @@ h1 {
 }
 
 .notion-collection-item > a > div > div:nth-child(3) > div:nth-child(2) span {
-  font-size: 14px;
-  color: #808080;
-  white-space: normal;
-  word-break: break-all;
-  line-height: 170%;
+  font-size: 14px !important;
+  color: #808080 !important;
+  white-space: normal !important;
+  word-break: break-all !important;
+  line-height: 170% !important;
 }
 /*# sourceMappingURL=embed.css.map */
