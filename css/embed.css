@@ -23,12 +23,17 @@ h1 {
   transition: 200ms;
 }
 
+.notion-collection-item > a {
+  -webkit-box-shadow: 0px 3px 6px #0000000c;
+          box-shadow: 0px 3px 6px #0000000c;
+}
+
 .notion-collection-item > a > div:hover {
   background: #ffffff !important;
 }
 
 .notion-collection-item > a {
-  border-radius: 6px !important;
+  border-radius: 10px !important;
 }
 
 .notion-collection-item:hover {
