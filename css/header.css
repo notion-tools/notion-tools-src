@@ -19,6 +19,10 @@
   background-color: #2E2D3D;
 }
 
+.header-divver a {
+  text-decoration: none;
+}
+
 .header-divver #header {
   display: -webkit-box;
   display: -ms-flexbox;

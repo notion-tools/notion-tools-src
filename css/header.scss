@@ -11,6 +11,10 @@
     height: 40px;
     background-color: #2E2D3D;
 
+    a {
+        text-decoration: none;
+    }
+
     #header {
         display: flex;
         max-width: 1380px;
