@@ -120,6 +120,7 @@
   text-decoration: none;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  text-align: center;
 }
 
 .header-divver #header .top-account-btn:hover, .header-divver #header .top-nav-btn:hover {
