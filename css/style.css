@@ -148,15 +148,15 @@
 }
 
 .notion-header {
-  background-color: #ffffff00 !important;
+  background-color: #ffffff00;
 }
 
 .notion-header > div > div > div {
-  visibility: hidden !important;
+  visibility: hidden;
 }
 
 .notion-header > div > div > div:nth-child(3) {
-  visibility: initial !important;
+  visibility: initial;
   color: #ffffff00;
 }
 /*# sourceMappingURL=style.css.map */
