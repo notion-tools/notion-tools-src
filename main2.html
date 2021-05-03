@@ -1,0 +1,207 @@
+<head>
+    <!-- <link rel="stylesheet" href="css2/style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            z-index: 9999;
+            position: fixed;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100vw;
+            height: 50px;
+            background-color: #2E2D3D;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            top: 0;
+            left: 0;
+        }
+
+        @media (max-width: 767px) {
+            #header {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+
+        #header a {
+            color: #9F9F9F;
+            text-decoration: none;
+        }
+
+        #header .header-title {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        #header .header-nav a {
+            display: inline-block;
+            padding: 7px 10px;
+            -webkit-transition: background-color 200ms, color 200ms;
+            transition: background-color 200ms, color 200ms;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 767px) {
+            #header .header-nav a {
+                display: none;
+            }
+        }
+
+        #header .header-nav a:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        #header .header-nav .top-nav-btn-selected {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+
+        @media (max-width: 767px) {
+            #header .header-nav .top-nav-btn-selected {
+                display: inline-block;
+                background-color: rgba(255, 255, 255, 0);
+            }
+        }
+
+        #header .header-search #search_box {
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 5px 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #9F9F9F;
+            min-width: 28px;
+            min-height: 28px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: left;
+            -ms-flex-pack: left;
+            justify-content: left;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            #header .header-search #search_box {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: #ffffff;
+                padding: 5px;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                border-radius: 100%;
+            }
+
+            #header .header-search #search_box span {
+                display: none;
+            }
+        }
+
+        #footer {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100vw;
+            text-align: center;
+        }
+
+        #footer a {
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 13px;
+            color: #548BE8;
+            text-decoration: none;
+        }
+
+        #footer a:hover {
+            text-decoration: underline;
+        }
+
+        .notion-header {
+            background-color: #ffffff00;
+        }
+
+        .notion-header>div>div>div {
+            visibility: hidden;
+        }
+
+        .notion-header>div>div>div:last-child {
+            visibility: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-title">
+            <a href="/" style="margin-right: 15px; margin-top: 4px;"><svg xmlns="http://www.w3.org/2000/svg" width="38"
+                    viewBox="0 0 41.817 23.764">
+                    <g transform="translate(-60.56 -267.002)">
+                        <path
+                            d="M101.444,270.54,97.2,267.716c-1.026-.706-1.446-.795-3.078-.662l-13.888.785c-1.04.087-1.294.56-1.308,1.314l-.555-.37c-1.026-.706-1.446-.795-3.078-.662L62,269.051a1.41,1.41,0,0,0-1.445,1.544v13.765a2.881,2.881,0,0,0,.792,1.854l3.124,3.839a1.99,1.99,0,0,0,1.961.707l15.433-.883c.862-.058,1.317-.328,1.525-.785a2.007,2.007,0,0,0,1.866.6l15.436-.882c1.305-.087,1.679-.662,1.679-1.632V271.687C102.377,271.158,102.144,271.026,101.444,270.54Zm-36.92,1.509-1.82-1.368c-.186-.174-.092-.4.374-.441l12.777-.884a2.734,2.734,0,0,1,2.052.574l2.191,1.5c.093.044.326.309.046.309l-13.2.751C65.548,272.578,65.269,272.625,64.524,272.049Zm17.44,15.09c0,.574-.093,1.06-.933,1.1l-14.5.8c-.839.044-1.212-.221-1.212-.928V274.961c0-.574.187-.839.746-.883l15.155-.838c.514-.044.747.265.747.838Zm1.388-16.244-1.82-1.281c-.186-.177-.092-.4.374-.441l12.559-.883a2.98,2.98,0,0,1,2.139.574l2.1,1.413c.093.044.326.308.046.308l-12.978.751C84.377,271.424,84.1,271.467,83.352,270.894Zm17.44,15.177c0,.574-.093,1.06-.933,1.1l-14.2.795c-.839.044-1.212-.221-1.212-.928V273.894c0-.574.187-.839.746-.883l14.85-.838c.514-.044.747.265.747.838Z"
+                            transform="translate(0 0)" fill="#fff" />
+                        <path
+                            d="M236.311,465.986a.758.758,0,0,0-.746.883l1.213.131v6.091l-4.756-6.883-3.451.222a.832.832,0,0,0-.793,1.015l1.166.087v8.693l-.84.218a.558.558,0,0,0-.326.706l3.217-.177c1.167,0,1.167-.794,1.167-.794l-1.447-.309V469.3l4.571,6.8c.559.662.746.882,1.492.882a3.763,3.763,0,0,0,1.632-.485V466.78l.7-.131c.421-.044.513-.442.421-.839Z"
+                            transform="translate(-159.897 -190.142)" fill="#fff" />
+                        <path
+                            d="M687.619,441.043c-.044-.3-.548-.343-.842-.343l-8.179.476c-.3,0-.693.044-.735.343-.07.542-.036,1.622-.107,2.122-.028.214.5.24.809.24.141,0,.422.017.45-.125l.149-.826c.044-.185.035-.212.289-.212l1.665-.1a.2.2,0,0,1,.208.2l-.046,8.137-1.076.356c-.159.054-.265.493-.2.654l4.951-.312c.349,0,.741-.61.654-.7a7.777,7.777,0,0,1-1.452-.523v-7.9a.148.148,0,0,1,.136-.149l1.612-.095c.253,0,.421-.013.463.171l.095.889c.028.114.056.171.254.171.452,0,.983-.071.955-.343C687.616,442.642,687.69,441.585,687.619,441.043Z"
+                            transform="translate(-590.294 -166.127)" fill="#fff" />
+                    </g>
+                </svg>
+            </a>
+        </div>
+        <div class="header-nav">
+            <a href="/pages" class="top-nav-btn-selected">페이지 갤러리</a>
+            <a href="/templates">템플릿 갤러리</a>
+            <a href="/embeds">임베드 & 툴즈</a>
+        </div>
+        <div class="header-search">
+            <div id="search_box" onClick="openSearchBox()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#9F9F9F" viewBox="0 0 256 256">
+                    <rect width="256" height="256" fill="none"></rect>
+                    <circle cx="116" cy="116" r="84" fill="none" stroke="#9F9F9F" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="16"></circle>
+                    <line x1="175.39356" y1="175.40039" x2="223.99414" y2="224.00098" fill="none" stroke="#9F9F9F"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line>
+                </svg>
+                <span style="margin-left: 5px;">검색</span>
+            </div>
+        </div>
+    </div>
+    <div style="height: 400px;"></div>
+    <div id="footer">
+        <a href="/">(C) 2021 Notion Tools</a>
+        <a href="/updates">업데이트</a>
+        <a href="/community">커뮤니티</a>
+        <a href="/question">문의</a>
+        <a href="/help">도움말</a>
+        <a href="/about">Notion Tools는?</a>
+    </div>
+    <script>
+        function openSearchBox() {
+            document.querySelector(".notion-topbar > div > div:nth-child(3)").click()
+            document.querySelector('.notion-topbar > div > div:nth-child(3) input[placeholder="검색창"]').focus()
+        }
+    </script>
+</body>
