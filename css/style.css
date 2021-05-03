@@ -159,4 +159,8 @@
   visibility: initial;
   color: #ffffff00;
 }
+
+.notion-header > div > div > div:nth-child(4) {
+  visibility: initial;
+}
 /*# sourceMappingURL=style.css.map */
